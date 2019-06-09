@@ -1,6 +1,9 @@
 # STAFFLY-MGH
 Mask Glasses hat command
 
-Bugs
+With anims 😱 (pls stop msging me about anims)
+
+
+Bug
 
 New masks dont save
