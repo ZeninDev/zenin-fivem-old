@@ -1,24 +1,3 @@
-ESX 			    			= nil
-local PlayerData 				= {}
-
-Citizen.CreateThread(function()
-	while ESX == nil do
-		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-		Citizen.Wait(0)
-	end
-end)
-
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded', function(xPlayer)
-  PlayerData = xPlayer
-end)
-
-RegisterNetEvent('esx:setJob')
-AddEventHandler('esx:setJob', function(job)
-  PlayerData.job = job
-end)
-
-
   glassesOn = false
   currentGlasses = nil
   myGlasses = nil
@@ -152,16 +131,13 @@ end, false)
 
 RegisterNetEvent('mask')
 AddEventHandler('mask', function()
-Citizen.Wait(0)
 --[[
   Sets variables for if masks are on and which masks they are
 ]]--
-
-local xPlayer = ESX.GetPlayerData()
   local player = PlayerPedId()
   local currentMasks = GetPedDrawableVariation(player, 1)
   local ad = "missfbi4"
-   local ads = "mp_masks@standard_car@ds@"
+  local ads = "mp_masks@standard_car@ds@"
   local players = PlayerPedId()
   loadAnimDict( ad )
   loadAnimDict( ads )
