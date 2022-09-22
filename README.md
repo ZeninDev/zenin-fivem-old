@@ -1,9 +1,2 @@
-# STAFFLY-MGH
-Mask Glasses hat command
-
-With anims 😱 (pls stop msging me about anims)
-
-
-Bug
-
-New masks dont save
+# zenin fivem
+very old mask, hat and glasses script | not updating it.
